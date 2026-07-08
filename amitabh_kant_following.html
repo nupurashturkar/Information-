@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amitabh Kant — Following List</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f4f8; color: #1a1a1a; }
+  .header { background: #0b1437; color: white; padding: 28px 32px 20px; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+  .header p  { font-size: 13px; opacity: 0.65; }
+  .search-bar { background: #1e3a5f; padding: 14px 32px; }
+  .search-bar input { width: 100%; max-width: 520px; padding: 9px 14px; border: none; border-radius: 6px; font-size: 14px; background: #fff; outline: none; }
+  .tabs { display: flex; gap: 4px; background: #e8edf5; padding: 12px 32px 0; border-bottom: 2px solid #d1d9e6; overflow-x: auto; }
+  .tab { padding: 9px 18px; font-size: 13px; font-weight: 600; cursor: pointer; border-radius: 6px 6px 0 0; border: none; background: transparent; color: #4a5568; transition: background 0.15s; white-space: nowrap; }
+  .tab.active { background: white; color: #0b1437; border-bottom: 2px solid white; margin-bottom: -2px; }
+  .tab:hover:not(.active) { background: #d1daf0; }
+  .content { padding: 24px 32px; max-width: 1100px; }
+  .section { display: none; }
+  .section.active { display: block; }
+  .intro { background: white; border-left: 4px solid #0b1437; padding: 12px 16px; margin-bottom: 22px; border-radius: 0 6px 6px 0; font-size: 13px; color: #444; line-height: 1.6; }
+  .sub { margin-bottom: 28px; }
+  .sub-title { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; padding: 8px 14px; border-radius: 6px 6px 0 0; margin-bottom: 0; }
+  .sub-title .count { font-size: 11px; font-weight: 500; opacity: 0.7; margin-left: auto; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 0 0 6px 6px; overflow: hidden; }
+  th { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 8px 12px; background: #0b1437; color: white; text-align: left; }
+  td { padding: 8px 12px; font-size: 13px; border-bottom: 1px solid #f0f4f8; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:nth-child(even) td { background: #f8fafc; }
+  tr:hover td { background: #eff6ff !important; }
+  .handle { font-family: monospace; font-size: 12px; color: #1d4ed8; white-space: nowrap; }
+  .handle a { color: #1d4ed8; text-decoration: none; }
+  .handle a:hover { text-decoration: underline; }
+  .name { font-weight: 600; color: #1a1a1a; }
+  .note { color: #555; font-size: 12px; }
+  tr.hidden { display: none; }
+  .theme-navy .sub-title { background: #eff6ff; color: #0b1437; border-left: 4px solid #0b1437; }
+  .theme-teal .sub-title { background: #f0fdfa; color: #0f766e; border-left: 4px solid #0f766e; }
+  .theme-purple .sub-title { background: #f5f3ff; color: #6d28d9; border-left: 4px solid #6d28d9; }
+  .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+  .stat-card { background: white; border-radius: 8px; padding: 12px 20px; font-size: 13px; flex: 1; min-width: 140px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+  .stat-card .num { font-size: 24px; font-weight: 700; color: #0b1437; }
+  .stat-card .lbl { color: #888; font-size: 11px; margin-top: 2px; }
+  .no-results { text-align: center; padding: 40px; color: #999; font-size: 14px; display: none; }
+  td.note { cursor: pointer; }
+  td.note:hover .note-text { opacity: 0.85; }
+  .note-text { vertical-align: middle; }
+  @media (max-width: 600px) {
+    .header, .search-bar, .content { padding-left: 16px; padding-right: 16px; }
+    .tabs { padding: 10px 16px 0; }
+    .tab { font-size: 12px; padding: 8px 12px; }
+    td, th { font-size: 12px; padding: 7px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Amitabh Kant — Twitter/X Following List</h1>
+  <p>365 accounts from PDF · Categorized by Country, Profession &amp; Topical Relevance</p>
+</div>
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search by handle, name, or role…" oninput="filterAll()">
+</div>
+<div class="tabs">
+  <button class="tab active" onclick="showTab('country',this)">By Country</button>
+  <button class="tab" onclick="showTab('profession',this)">By Profession</button>
+  <button class="tab" onclick="showTab('topical',this)">By Topic / Use-case</button>
+</div>
+<div class="content">
+
+<div id="tab-country" class="section active theme-navy">
+  <div class="stats">
+    <div class="stat-card"><div class="num">365</div><div class="lbl">Total Unique Accounts</div></div>
+    <div class="stat-card"><div class="num">500</div><div class="lbl">Accounts in PDF</div></div>
+    <div class="stat-card"><div class="num">~60%</div><div class="lbl">India-based / India-linked</div></div>
+    <div class="stat-card"><div class="num">~25%</div><div class="lbl">USA / UK / Europe / Multilateral</div></div>
+  </div>
+  <div class="intro">Groups all accounts by country or region. India dominates, reflecting Amitabh Kant's roles as NITI Aayog CEO and India's G20 Sherpa. All 500 PDF accounts are covered across the three views.</div>
+  <div id="country-subs"></div>
+  <div class="no-results" id="country-noresults">No matching accounts found.</div>
+</div>
+
+<div id="tab-profession" class="section theme-teal">
+  <div class="intro">Organised by professional category. Key accounts appear in multiple sub-sections where relevant. Use this when targeting a specific professional community.</div>
+  <div id="profession-subs"></div>
+  <div class="no-results" id="profession-noresults">No matching accounts found.</div>
+</div>
+
+<div id="tab-topical" class="section theme-purple">
+  <div class="intro">Clusters accounts by Amitabh Kant's core priorities: G20, India economic reform, Indo-Pacific strategy, Make in India, climate, and AI. Use for event prep or targeted outreach.</div>
+  <div id="topical-subs"></div>
+  <div class="no-results" id="topical-noresults">No matching accounts found.</div>
+</div>
+
+</div>
+<script>
+const DATA = {
+  country:    [
+    { title: "India \u2014 Prime Minister & Cabinet Ministers", rows: [
+        ["@narendramodi","Narendra Modi","Prime Minister of India"],
+        ["@narendramodi_in","NarendraModi.in","Official PM Modi website/archive account"],
+        ["@drsjaishankar","Dr. S. Jaishankar","External Affairs Minister of India"],
+        ["@nsitharamanoffc","Nirmala Sitharaman Office","Office of Finance & Corporate Affairs Minister"],
+        ["@rajnathsingh","Rajnath Singh","Defence Minister of India"],
+        ["@HardeepSPuri","Hardeep Singh Puri","Minister for Petroleum & Natural Gas"],
+        ["@dpradhanbjp","Dharmendra Pradhan","Minister of Education, GoI"],
+        ["@byadavbjp","Bhupender Yadav","Minister for Environment, Forest & Climate Change"],
+        ["@AshwiniVaishnaw","Ashwini Vaishnaw","Minister for Railways, I&B, Electronics & IT"],
+        ["@mansukhmandviya","Dr Mansukh Mandaviya","Minister of Labour & Sports, GoI"],
+        ["@ianuragthakur","Anurag Thakur","MP (LS-Hamirpur); ex-I&B Minister"],
+        ["@shaziailmi","Shazia Ilmi","BJP leader; followed by PM Modi"],
+        ["@vijai63","Dr Vijay Chauthaiwale","In-Charge, Foreign Affairs Dept, BJP"],
+        ["@sambitswaraj","Sambit Patra","MP from Puri; BJP National Spokesperson"],
+        ["@Jairam_Ramesh","Jairam Ramesh","MP; Gen Secretary INC Communications"],
+        ["@ShashiTharoor","Shashi Tharoor","MP Thiruvananthapuram; INC; ex-MoS"],
+        ["@CMOfficeUP","CM Office, GoUP","Office of CM Yogi Adityanath, UP"],
+        ["@myogiadityanath","Yogi Adityanath","Chief Minister, Uttar Pradesh"],
+        ["@aksharmaBharat","A K Sharma","Minister Energy & Urban Dev, UP Govt; ex-IAS"],
+        ["@Devendra_Office","Office of Devendra Fadnavis","Office of CM, Maharashtra"],
+        ["@HMOIndia","HMO India","Office of the Home Minister of India"],
+        ["@DefenceMinIndia","RMO India","Office of the Raksha Mantri / Defence Minister"],
+        ["@MoCA_GoI","MoCA GoI","Ministry of Civil Aviation, GoI"],
+        ["@PMOIndia","PMO India","Office of the Prime Minister (if listed)"]
+    ]},
+    { title: "India \u2014 NITI Aayog & Economic Advisory", rows: [
+        ["@NITIAayog","NITI Aayog","Premier policy think-tank, GoI"],
+        ["@ShamikaRavi","Prof. Shamika Ravi","Member, NITI Aayog; EAC-PM economist"],
+        ["@bibekdebroy","Bibek Debroy","Ex-Chairman EAC-PM; economist (memorial account)"],
+        ["@RajivKumar1","Rajiv Kumar","Ex-VC NITI Aayog; Chairman Pahle India Foundation"],
+        ["@APanagariya","Arvind Panagariya","Chairman 16th Finance Commission; ex-VC NITI Aayog"],
+        ["@suman_bery","Suman K. Bery","Vice Chair, NITI Aayog"],
+        ["@debjani_ghosh_","Debjani Ghosh","Distinguished Fellow NITI Aayog; ex-NASSCOM President"],
+        ["@dravirmani","Dr Arvind Virmani","Founder EGROW; ex-EAC-PM; ex-IMF ED"],
+        ["@neelkanthmishra","Neelkanth Mishra","Chief Economist Axis Bank; EAC-PM member"],
+        ["@paramiyer_","Param Iyer","Ex-Dir World Bank India; ex-CEO NITI Aayog"],
+        ["@DasShaktikanta","Shaktikanta Das","Principal Secy-2 to PM; ex-RBI Governor"]
+    ]},
+    { title: "India \u2014 Diplomats & Foreign Service", rows: [
+        ["@ruchirakamboj","Ruchira Kamboj","Ex-India Permanent Rep at UN"],
+        ["@harshvshringla","Harsh V Shringla","MP; ex-Foreign Secretary; ex-G20 Chief Coordinator"],
+        ["@VGokhale59","Vijay Gokhale","China Watcher; Sr Fellow Carnegie India; ex-Foreign Secy"],
+        ["@tca_raghavan","Tca Raghavan","Ex-HC Pakistan & Singapore; historian"],
+        ["@Ajaybis","Ajay Bisaria","Distinguished Fellow ORF; ex-envoy Canada/Pakistan"],
+        ["@KanwalSibal","Kanwal Sibal","Ex-Foreign Secretary; Chancellor JNU"],
+        ["@deepagopalan","Deepa Gopalan Wadhwa","IFS (Retd); ex-Amb Sweden, Qatar, Japan"],
+        ["@AkbaruddinIndia","Syed Akbaruddin","Dean Kautilya School of Public Policy; ex-Perm Rep UN"],
+        ["@JawedAshraf5","Jawed Ashraf","Chairman ITPO; ex-Amb France; ex-HC Singapore"],
+        ["@VDoraiswami","Vikram Doraiswami","Indian diplomat (HC to UK)"],
+        ["@NagNaidu08","Nagaraj Naidu Kakanur","Addl Secy (AMS-USA & Canada), MEA; ex-JS G20"],
+        ["@IndiaUNNewYork","India at UN, NY","Permanent Mission of India to the United Nations"],
+        ["@IndianDiplomacy","Indian Diplomacy","India's Public Diplomacy, MEA"],
+        ["@Naman_ifs","Naman Upadhyaya","First Secretary @IndiainROK; career diplomat"],
+        ["@AmbAbhayThakur","Abhay Thakur","Amb to Myanmar; ex-G20 Sous Sherpa"],
+        ["@lakshmiunwomen","Lakshmi M Puri","Ex-UN Asst Secy-General; ex-Dep Exec Dir UN Women"],
+        ["@IndiaInShanghai","India In Shanghai","Consulate General of India, Shanghai"],
+        ["@AmbSKReddy","Suresh Reddy","Amb to Egypt; ex-Amb Brazil, ASEAN, Iraq"],
+        ["@USAmbKeshap","Atul Keshap","President USIBC; 28-yr US State Dept veteran"],
+        ["@MukeshAghi","Mukesh Aghi","President & CEO, USIBC"]
+    ]},
+    { title: "India \u2014 Think Tanks & Strategic Affairs", rows: [
+        ["@samirsaran","Samir Saran","President, ORF"],
+        ["@MohanCRaja","C. Raja Mohan","Contrib Editor Indian Express; ex-Director Carnegie India"],
+        ["@HindolSengupta","Hindol Sengupta","Historian; 13 books; Prof international relations"],
+        ["@sreeramchaulia","Sreeram Chaulia","Dean, Jindal School of International Affairs"],
+        ["@Chellaney","Dr. Brahma Chellaney","Professor, strategic thinker; author"],
+        ["@nitingokhale","Nitin A. Gokhale","National Security Analyst; founder BharatShakti"],
+        ["@BharatShaktiBSI","BharatShakti.in","Defence self-reliance portal; founded by @nitingokhale"],
+        ["@amitabhmattoo","Amitabh Mattoo","Dean School of Int'l Studies JNU; Australia-India expert"],
+        ["@tilakdevasher1","Tilak Devasher","Author, Pakistan trilogy; strategic affairs"],
+        ["@arunmsukumar","Arun Sukumar","Asst Prof Ashoka Univ; ex-Leiden & Hague Programme"],
+        ["@DRDO_India","DRDO","Defence Research & Development Organisation, MoD"],
+        ["@LBSNAA_Official","LBSNAA","Lal Bahadur Shastri National Academy of Administration"],
+        ["@raisinadialogue","Raisina Dialogue","Multilateral conference on global challenges (ORF)"],
+        ["@ISASNus","ISAS NUS","Institute of South Asian Studies, Natl Univ Singapore"],
+        ["@ab_decodes","Arjun Bhagat Decodes","Foreign policy & geopolitics analyst/educator"]
+    ]},
+    { title: "India \u2014 Business, Industry & Finance", rows: [
+        ["@gautam_adani","Gautam Adani","Chairman, Adani Group"],
+        ["@AnilAgarwal_Ved","Anil Agarwal","Chairman, Vedanta Resources"],
+        ["@adarpoonawalla","Adar Poonawalla","CEO, Serum Institute of India"],
+        ["@TataCompanies","Tata Group","Official handle of the Tata Group"],
+        ["@RishadPremji","Rishad Premji","Chairman, Wipro; ex-Chairman NASSCOM"],
+        ["@nikhilkamathcio","Nikhil Kamath","Investor & entrepreneur; co-founder Zerodha"],
+        ["@Nithin0dha","Nithin Kamath","Founder & CEO, Zerodha"],
+        ["@GoenkaPk","Pawan K Goenka","Chairman INSPACe; ex-MD Mahindra & Mahindra"],
+        ["@AdilZainulbhai","Adil Zainulbhai","Chairman Capacity Building Commission; Network18 Chairman"],
+        ["@sbikh","Sanjeev Bikhchandani","Internet entrepreneur; founder Naukri.com"],
+        ["@C_P_Gurnani","CP Gurnani","Co-Founder AIONOS; ex-CEO Tech Mahindra"],
+        ["@gangadharansind","Sindhu Gangadharan","MD SAP Labs India; Chairperson NASSCOM"],
+        ["@drsangitareddy","Dr. Sangita Reddy","Jt MD Apollo Hospitals; ex-President FICCI; G20 Empower"],
+        ["@GayatriPVYadav","Gayatri Vasudeva Yadav","Group CMO & EVP Reliance; Chairman's Office"],
+        ["@Raivineet","Vineet Rai","Founder Aavishkaar, Intellecap; impact investing"],
+        ["@porinju","Porinju Veliyath","Founder & CEO, Equity Intelligence India"],
+        ["@VijayKedia1","Vijay Kedia","Investor; speaker IIMs, IIT, ISB; 3x TEDx"],
+        ["@NileshShah68","Nilesh Shah","Kotak AMC; 'Mutual Fund Sahi Hai' evangelist"],
+        ["@monikahalan","Monika Halan","Author (Let's Talk Money); Chair SEBI Committee"],
+        ["@Lord_Bilimoria","Lord Karan Bilimoria","Founder Cobra Beer; Independent Crossbench Peer, UK"],
+        ["@PittieAditya","Aditya Pittie","Entrepreneur; author #ViksitBharatIndia2047"],
+        ["@warikoo","Ankur Warikoo","Entrepreneur, author, content creator"],
+        ["@SharmaShradha","Shradha Sharma","Founder, YourStory"],
+        ["@GoldmanSachs","Goldman Sachs","Global investment bank"],
+        ["@MorganStanley","Morgan Stanley","Global financial services firm"],
+        ["@RajeshAgrawal","Rajesh Agrawal","Serial entrepreneur; ex-Deputy Mayor of London"],
+        ["@CIITweets","CII","Confederation of Indian Industry"],
+        ["@ICRIER","ICRIER","Indian Council for Research on International Economic Relations"],
+        ["@andymukherjee70","Andy Mukherjee","Bloomberg Opinion columnist"],
+        ["@PrashantKishor","Prashant Kishor","Political strategist; social reformer"],
+        ["@rc2144","Rudra Chatterjee","Director, Obeetee and Luxmi Group"],
+        ["@pnvijay","P.N.Vijay","Investment banker; commentator on Hindu philosophy"],
+        ["@IND2047","INDVest","Investors forum for India 2047 vision; NYC"],
+        ["@sama18","Nishhant Samaa","BRICS CCI; India Africa Trade Council; G20 YEA delegate"],
+        ["@kapiljaink3","Kapil Jain","Media & tech investor; B20 Task Force; SDG advocacy"]
+    ]},
+    { title: "India \u2014 Technology, AI & Startups", rows: [
+        ["@nasscom","NASSCOM","India's IT industry association"],
+        ["@Nandan_Nilekani","Nandan Nilekani","Co-founder Infosys; Aadhaar architect; DPI evangelist"],
+        ["@bhash","Bhavish Aggarwal","Founder & CEO, OLA / Krutrim AI"],
+        ["@svembu","Sridhar Vembu","Chief Scientist & Founder, Zoho Corporation"],
+        ["@hcltech","HCLTech","IT services conglomerate, HCL"],
+        ["@manuchopra42","Manu Chopra","Building AI data & evaluation stack for Global South"],
+        ["@riteshagar","Ritesh Agarwal","Founder & Group CEO, PRISM"],
+        ["@GoI_MeitY","MeitY India","Ministry of Electronics & IT, GoI"],
+        ["@beeindiadigital","Bureau of Energy Efficiency","BEE: reducing energy intensity of Indian economy"],
+        ["@perplexity_ai","Perplexity AI","AI-powered search and answers"],
+        ["@ashtom","Thomas Dohmke","Building EntireHQ; ex-CEO GitHub"],
+        ["@balajis","Balaji Srinivasan","Author, The Network State; tech investor"],
+        ["@sbikh","Sanjeev Bikhchandani","Naukri.com founder; internet entrepreneur"],
+        ["@matthan","Rahul Matthan","Tech lawyer; partner Trilegal; columnist"],
+        ["@heyshrutimishra","Shruti Mishra","AI & robotics storyteller/journalist"],
+        ["@nextbigwhat","NextBigWhat.com","Platform for tech business builders"],
+        ["@deedydas","Deedy","Partner Menlo Ventures; ex-Glean, Google; Anthropic investor"],
+        ["@snowmaker","Jared Friedman","Partner, Y Combinator"]
+    ]},
+    { title: "India \u2014 Academia & Intellectuals", rows: [
+        ["@DrRaghuram_Rajan","Raghuram Rajan","Ex-RBI Governor; Univ of Chicago Booth Prof"],
+        ["@AbhijitBanerjee","Abhijit Banerjee","MIT Prof; Nobel Economics 2019; J-PAL founder"],
+        ["@subramanian_s","Arvind Subramanian","Ex-Chief Economic Adviser to GoI"],
+        ["@RajivMessage","Rajiv Malhotra","Researcher; author on inter-civilization topics"],
+        ["@vijayprashad","Vijay Prashad","Director Tricontinental; historian; LeftWord Books"],
+        ["@NamitaGokhale_","Namita Gokhale","Writer, publisher; Festival Director, Jaipur Lit Fest"],
+        ["@karthikavk","Karthika V.K.","Publisher, Westland Books"],
+        ["@JaipurLitFest","Jaipur Literature Festival","'Greatest literary show on Earth'"],
+        ["@jasonhickel","Jason Hickel","Prof ICTA-UAB; author 'Less is More'; degrowth"],
+        ["@nntaleb","Nassim Nicholas Taleb","Flaneur; author Black Swan, Antifragile"],
+        ["@BallouxFrancois","Prof Francois Balloux","Director UCL Genetics Institute; infectious disease"],
+        ["@FaheemYounus","Faheem Younus, MD","Prof of Medicine, Univ of Maryland; infectious disease"],
+        ["@Atul_Gawande","Atul Gawande","Surgeon; author Being Mortal; ex-USAID Global Health"]
+    ]},
+    { title: "India \u2014 Media & Journalism", rows: [
+        ["@palkisu","Palki Sharma","Journalist, foreign affairs anchor, FirstPost/WION"],
+        ["@sardesairajdeep","Rajdeep Sardesai","Senior journalist; India Today Group"],
+        ["@rahulkanwal","Rahul Kanwal","CEO & Editor-in-Chief, NDTV"],
+        ["@anjanaomkashyap","Anjana Om Kashyap","Senior Managing Editor, Aaj Tak"],
+        ["@CNBCTV18News","CNBC-TV18","India's leading business news channel"],
+        ["@ANI","ANI","Asian News International; multi-media news agency"],
+        ["@ABPNews","ABP News","Hindi news broadcaster"],
+        ["@VishnuNDTV","Vishnu Som","Senior Managing Editor, NDTV; author; Ramnath Goenka award"],
+        ["@AdityaRajKaul","Aditya Raj Kaul","Senior Executive Editor NDTV; geopolitics & national security"],
+        ["@soniasinghIndia","Sonia Singh","Author; formerly NDTV; Cambridge JBS Visiting Fellow"],
+        ["@latha_venkatesh","Latha Venkatesh","Consulting Editor, CNBC-TV18; markets & macroeconomics"],
+        ["@vijaita","Vijaita Singh","Deputy Editor, The Hindu"],
+        ["@MattooShashank","Shashank Mattoo","America Correspondent, HT; formerly India Today, Mint, ORF"],
+        ["@ItsShubhangi","Shubhangi Sharma","International affairs & geopolitics, FirstPost / Network18"],
+        ["@dhume","Sadanand Dhume","CFR Senior Fellow; WSJ Columnist"],
+        ["@nandu79","Nandagopal Rajan","CEO, Indian Express Digital; gadgets & tech"],
+        ["@airnewsalerts","All India Radio News","News Services Division, Akashvani"],
+        ["@DDIndialive","DD India","India's global news channel, Prasar Bharati"],
+        ["@ians_india","IANS","India's largest independent news agency"],
+        ["@thewire_in","The Wire","Independent investigative news site"],
+        ["@SwarajyaMag","Swarajya","Indian renaissance; published since 1956"],
+        ["@desimojito","Desi Mojito","Journalist; news; current affairs; astrologer"],
+        ["@peedeegee","Pratim D Gupta","The Bong Lebowski; journalist"],
+        ["@chatukhor","Uttam Sengupta","Journalist; columnist"]
+    ]},
+    { title: "India \u2014 Health, Pharma & Life Sciences", rows: [
+        ["@adarpoonawalla","Adar Poonawalla","CEO, Serum Institute of India"],
+        ["@SerumInstIndia","Serum Institute India","World's largest vaccine manufacturer"],
+        ["@BharatBiotech","Bharat Biotech","Vaccine manufacturer; Covaxin maker"],
+        ["@drsangitareddy","Dr. Sangita Reddy","Jt MD Apollo Hospitals; ex-FICCI President"],
+        ["@DoctorNene","Dr. Shriram Nene","Doctor, health tech innovator"],
+        ["@FaheemYounus","Faheem Younus MD","Professor of Medicine; infectious disease expert"],
+        ["@Atul_Gawande","Atul Gawande","Surgeon; author; ex-USAID Global Health lead"],
+        ["@BMGFIndia","Gates Foundation India","Bill & Melinda Gates Foundation India office"]
+    ]},
+    { title: "India \u2014 Climate, Energy & Infrastructure", rows: [
+        ["@GhoshArunabha","Arunabha Ghosh","CEO CEEW; Special Envoy COP30; WEF Young Global Leader"],
+        ["@Bh_Chandra","Chandra Bhushan","Environmentalist; CEO iForest Global"],
+        ["@teriin","TERI","The Energy and Resources Institute"],
+        ["@TheICCT_India","ICCT India","International Council on Clean Transportation"],
+        ["@isolaralliance","International Solar Alliance","Supporting solar deployment in member countries"],
+        ["@Alekhya_Datta","Er. Alekhya Datta","Director Electricity & Renewables, TERI"],
+        ["@vnigamsinha","Vaishali Nigam Sinha","Co-Founder ReNew Corp; Chairperson Sustainability"],
+        ["@Infra_VinayakCh","Vinayak Chatterjee","Infrastructure expert; Founder Infravision Foundation"],
+        ["@beeindiadigital","Bureau of Energy Efficiency","GoI body reducing energy intensity"],
+        ["@rickykej","Ricky Kej","3x Grammy winner; Padma Shri; UN Goodwill Amb UNCC"],
+        ["@grnfrontiercap","Green Frontier Capital","India's first climate-focused VC fund"],
+        ["@Janaagraha1","Janaagraha","Urban quality of life; citizen-government collaboration"],
+        ["@tourismgoi","Ministry of Tourism","Official Ministry of Tourism, GoI"],
+        ["@MPTourism","Madhya Pradesh Tourism","MP Tourism, Govt of MP"]
+    ]},
+    { title: "India \u2014 Civil Society, Development & Misc Official", rows: [
+        ["@PIB_India","Press Information Bureau","GoI official media arm"],
+        ["@airnewsalerts","All India Radio News","News Services Division, Akashvani"],
+        ["@DDIndialive","DD India","Prasar Bharati global news channel"],
+        ["@EBSB_Edumin","Ek Bharat Shreshtha Bharat","Flagship programme, Dept of Higher Education"],
+        ["@MumbaiPolice","Mumbai Police","Official Mumbai Police account"],
+        ["@samshiksha","SamShiksha","Free online courses platform"],
+        ["@themodistory","Modi Story","Narendra Modi's inspiring life story initiative"],
+        ["@TheFitistan","Fitistan","Fit India movement community"],
+        ["@unplasticday","UnPlasticDay","#BeatPlasticPollution advocacy"],
+        ["@sachinramjadhav","Sachin Jadhav","IAS, Odisha Cadre (2007)"],
+        ["@arvindpadhee","Arabinda K Padhee","IAS; Addl Chief Secretary Odisha"],
+        ["@rabhishek1982","Ramesh Abhishek","IAS (Retd); ex-Secy DPIIT (Make in India, Startup India)"]
+    ]},
+    { title: "USA \u2014 Government, Policy & Politics", rows: [
+        ["@WhiteHouse","The White House","Official White House account"],
+        ["@realDonaldTrump","Donald J. Trump","45th & 47th President of the USA"],
+        ["@RapidResponse47","Rapid Response 47","Official WH Rapid Response; America First agenda"],
+        ["@SecRubio","Secretary Marco Rubio","72nd Secretary of State"],
+        ["@TulsiGabbard","Tulsi Gabbard","Director of National Intelligence; ex-Congresswoman"],
+        ["@VivekGRamaswamy","Vivek Ramaswamy","Candidate for Governor of Ohio; ex-DOGE"],
+        ["@JoeBiden","Joe Biden","46th President of the USA"],
+        ["@POTUS46Archive","President Biden Archived","National Archives Biden administration account"],
+        ["@DepSecStateMR","Michael J. Rigas","6th US Deputy Secretary of State"],
+        ["@USAmbIndia","Ambassador Sergio Gor","US Ambassador to India & Special Envoy, South & Central Asia"],
+        ["@TerryMoran","Terry Moran","Independent journalist; ex-ABC News"],
+        ["@atrupar","Aaron Rupar","Journalist; Public Notice newsletter"],
+        ["@JesseBWatters","Jesse Watters","Fox News anchor; NYT bestselling author"],
+        ["@CollinRugg","Collin Rugg","Co-owner Trending Politics"],
+        ["@selinawangtv","Selina Wang","Senior White House Correspondent, ABC News"]
+    ]},
+    { title: "USA \u2014 Technology & AI Leaders", rows: [
+        ["@sama","Sam Altman","CEO, OpenAI"],
+        ["@tim_cook","Tim Cook","CEO, Apple"],
+        ["@satyanadella","Satya Nadella","Chairman & CEO, Microsoft"],
+        ["@sundarpichai","Sundar Pichai","CEO, Google & Alphabet"],
+        ["@karpathy","Andrej Karpathy","AI researcher; ex-OpenAI, Tesla"],
+        ["@demishassabis","Demis Hassabis","Co-Founder & CEO Google DeepMind; Nobel 2024"],
+        ["@nvidia","NVIDIA","GPU/AI compute leader; official handle"],
+        ["@kaifulee","Kai-Fu Lee","AI expert; CEO 01.ai; Chairman Sinovation Ventures"],
+        ["@patrickc","Patrick Collison","CEO, Stripe; co-founder Arc Institute"],
+        ["@ashtom","Thomas Dohmke","Building EntireHQ; ex-CEO GitHub"],
+        ["@levie","Aaron Levie","CEO, Box"],
+        ["@Benioff","Marc Benioff","CEO, Salesforce; Chair, Time"],
+        ["@PeterDiamandis","Peter H. Diamandis MD","Exec Chairman XPRIZE; Fountain Life; Abundance360"],
+        ["@lexfridman","Lex Fridman","Host, Lex Fridman Podcast; AI & robotics"],
+        ["@dwarkesh_sp","Dwarkesh Patel","Host, Dwarkesh Podcast; long-form AI/science interviews"],
+        ["@perplexity_ai","Perplexity AI","AI-powered search & answer engine"],
+        ["@deedydas","Deedy","Partner Menlo Ventures; Anthropic investor; ex-Glean, Google"],
+        ["@snowmaker","Jared Friedman","Partner, Y Combinator"],
+        ["@gregisenberg","Greg Isenberg","Startup ideas; CEO LatecheckoutPlz"],
+        ["@StartupArchive_","Startup Archive","Archiving world's best startup advice"],
+        ["@benthompson","Ben Thompson","Author, Stratechery; Dithering podcast"],
+        ["@nxthompson","Nicholas Thompson","CEO, The Atlantic"],
+        ["@cristiano_amon","Cristiano R. Amon","President & CEO, Qualcomm"],
+        ["@WillyShih_atHBS","Willy Shih","Professor, Harvard Business School; supply chains"],
+        ["@heykahn","Zain Kahn","AI newsletter; 2M+ readers"],
+        ["@rowancheung","Rowan Cheung","Founder, The Rundown AI (2M+ readers daily)"],
+        ["@heyshrutimishra","Shruti Mishra","AI & robotics storyteller"],
+        ["@DrEliDavid","Dr. Eli David","AI Researcher, Lecturer & Entrepreneur; 4x founder"],
+        ["@EyeingAI","EyeingAI","AI commentary & updates"],
+        ["@balajis","Balaji Srinivasan","Author, The Network State; tech/crypto investor"],
+        ["@manuchopra42","Manu Chopra","Building AI data & eval stack; Stanford CS"],
+        ["@jack","Jack Dorsey","Co-founder Twitter/X & Square/Block"],
+        ["@BillGates","Bill Gates","Co-founder Microsoft; philanthropist"]
+    ]},
+    { title: "USA \u2014 Finance & Economics", rows: [
+        ["@ojblanchard1","Olivier Blanchard","Robert Solow Prof Emeritus MIT; Sr Fellow Peterson Institute"],
+        ["@JosephEStiglitz","Joseph E. Stiglitz","Nobel laureate economist; Columbia University"],
+        ["@LHSummers","Lawrence H. Summers","Ex-US Treasury Secretary; Harvard Prof Emeritus"],
+        ["@nfergus","Niall Ferguson","Hoover Institution; author; international man of history"],
+        ["@RayDalio","Ray Dalio","Founder Bridgewater Associates; author Principles"],
+        ["@PIIE","Peterson Institute","Peterson Institute for International Economics"],
+        ["@GoldmanSachs","Goldman Sachs","Global investment bank"],
+        ["@MorganStanley","Morgan Stanley","Global financial services"],
+        ["@AvinashPersau15","Avinash Persaud","Finance, public policy and academia; Caribbean"],
+        ["@vitaliyk","Vitaliy Katsenelson","Value Investor; CEO IMA; author Soul in the Game"],
+        ["@michaeljburry","Michael Burry (Cassandra)","Called the Big Short; now on Substack"]
+    ]},
+    { title: "USA \u2014 Think Tanks & International Affairs", rows: [
+        ["@tanvi_madan","Tanvi Madan","Sr Fellow, Brookings Institution; India-China-US relations"],
+        ["@kyleichan","Kyle Chan","Research Fellow Brookings; China tech & industrial policy"],
+        ["@ProfTalmadge","Prof Talmadge","MIT Prof & Brookings Sr Fellow; nuclear weapons"],
+        ["@wrmead","Walter Russell Mead","Scholar Hudson Institute; Prof UF; WSJ columnist"],
+        ["@vali_nasr","Vali Nasr","Prof Johns Hopkins SAIS; ex-Sr Advisor State Dept"],
+        ["@DerekJGrossman","Derek J. Grossman","Founder Indo-Pacific Solutions; Sr Fellow CNAS"],
+        ["@NishaBiswal","Nisha Biswal","Ex-Asst Secretary of State for South Asia; policy leader"],
+        ["@kellysgallagher","Kelly Sims Gallagher","Dean Fletcher School; Director policy_climate; Carnegie"],
+        ["@vtchakarova","Velina Tchakarova","Geopolitical Strategist; coined #Dragonbear"],
+        ["@AgatheDemarais","Agathe Demarais","Geoeconomics ECFR; ex-EIU; sanctions expert; FP columnist"],
+        ["@MrKRudd","Kevin Rudd","President & CEO Asia Society; ex-PM Australia"],
+        ["@BrookingsInst","Brookings Institution","Washington DC think-tank"]
+    ]},
+    { title: "USA \u2014 Media & Journalism", rows: [
+        ["@EdwardGLuce","Edward Luce","Associate Ed, FT; US-based; author Zbig"],
+        ["@TuckerCarlson","Tucker Carlson","Conservative commentator/podcaster"],
+        ["@glcarlstrom","Gregg Carlstrom","Middle East Correspondent, The Economist"],
+        ["@SkyYaldaHakim","Yalda Hakim","Lead World News Presenter, Sky News; Afghan-Australian"],
+        ["@DominicWaghorn","Dominic Waghorn","International Affairs Editor, Sky News"],
+        ["@StephenMcDonell","Stephen McDonell","China Correspondent, BBC"],
+        ["@nxthompson","Nicholas Thompson","CEO, The Atlantic"],
+        ["@benthompson","Ben Thompson","Author, Stratechery"],
+        ["@atrupar","Aaron Rupar","Journalist; newsletter Public Notice"],
+        ["@APompliano","Anthony Pompliano","Entrepreneur, investor; daily writing & podcast"],
+        ["@polinapompliano","Polina M. Pompliano","Profile writer on extraordinary people"],
+        ["@deborahquazzo","Deborah Quazzo","GSV Ventures; ASU+GSV Summit"],
+        ["@MarioNawfal","Mario Nawfal","Largest live show on X; investor 700+ startups"]
+    ]},
+    { title: "UK \u2014 Government, Diplomacy & Policy", rows: [
+        ["@JonathanBlackUK","Jonathan Black","Deputy NSA; G7/G20 Sherpa, 10 Downing Street"],
+        ["@FCDOGovUK","FCDO UK","Foreign, Commonwealth & Dev Office, UK"],
+        ["@nick_bridge_uk","Nick Bridge","UK PM Special Rep for Climate Change"],
+        ["@Gus_O_Donnell","Lord Gus O'Donnell","Ex-UK Cabinet Secretary"],
+        ["@barryofarrell","Barry O'Farrell","Ex-HC to India; ex-Amb to Italy; ex-Premier NSW"],
+        ["@RajeshAgrawal","Rajesh Agrawal","Serial entrepreneur; ex-Deputy Mayor London; Chair Labour Friends of India"],
+        ["@Lord_Bilimoria","Lord Karan Bilimoria","Founder Cobra Beer; Independent Crossbench Peer"],
+        ["@AvinashPersau15","Avinash Persaud","Finance & public policy; Barbados Sustainable Investments"],
+        ["@Hugodixon","Hugo Dixon","Commentator-at-Large, Reuters; political entrepreneur"],
+        ["@VilleSkinnari","Ville Skinnari","Member of Parliament, Finland; SDP"]
+    ]},
+    { title: "UK \u2014 Media", rows: [
+        ["@SkyYaldaHakim","Yalda Hakim","Sky News; BBC journalist"],
+        ["@DominicWaghorn","Dominic Waghorn","Sky News International Affairs Editor"],
+        ["@glcarlstrom","Gregg Carlstrom","The Economist, Middle East"],
+        ["@EdwardGLuce","Edward Luce","Financial Times"],
+        ["@FT","Financial Times","Global business newspaper"],
+        ["@TheEconomist","The Economist","British current affairs weekly"],
+        ["@BBCWorld","BBC World","Global English news"]
+    ]},
+    { title: "Europe \u2014 Government & Diplomacy", rows: [
+        ["@EU_Commission","European Commission","Executive body of the European Union"],
+        ["@DMickeviciene","Diana Mickeviciene","Lithuania's Amb to India; ex-Amb to China"],
+        ["@FranceinIndia","French Embassy India","Embassy of France in India"],
+        ["@joergkukies","J\u00f6rg Kukies","Former German Minister of Finance"],
+        ["@ashokadiceam","Ashok Adic\u00e9am","French global affairs; ocean, culture, nature"],
+        ["@MathiasCormann","Mathias Cormann","Secretary-General, OECD"],
+        ["@fgautier26","Fran\u00e7ois Gautier","French journalist & writer on India"],
+        ["@fsalasl","Federico Salas","Ambassador of Mexico"],
+        ["@CMorenoToscano1","Carmen Moreno Toscano","Ambassador Emeritus of Mexico; Amb Netherlands"],
+        ["@feller_jennifer","Jennifer Feller","Diplomat, Mexican Foreign Ministry"],
+        ["@Videluca59","Vincenzo De Luca","Ambassador; Italy"],
+        ["@VanberghenEU","Prof. Cristina Vanberghen","Brussels; EU policy expert"],
+        ["@haugejostein","Jostein Hauge","Political economist; Assoc Prof Cambridge; 'The Future of the Factory'"]
+    ]},
+    { title: "Europe \u2014 Think Tanks & Media", rows: [
+        ["@AgatheDemarais","Agathe Demarais","ECFR geoeconomics; FP columnist; ex-EIU"],
+        ["@BjornLomborg","Bjorn Lomborg","Author 'Best Things First'; Copenhagen Consensus; climate pragmatist"],
+        ["@vtchakarova","Velina Tchakarova","Geopolitical Strategist; Vienna"],
+        ["@RnaudBertrand","Arnaud Bertrand","Entrepreneur; China/geopolitics commentator"]
+    ]},
+    { title: "Japan, Australia & Asia-Pacific", rows: [
+        ["@JapanAmbIndia","ONO Keiichi, Japan Amb","Ambassador of Japan to India & Bhutan"],
+        ["@barryofarrell","Barry O'Farrell","Ex-High Commissioner to India; ex-Premier NSW"],
+        ["@MrKRudd","Kevin Rudd","Ex-PM Australia; President Asia Society"],
+        ["@toddmckerrache","Todd McClay","NZ Minister of Agriculture, Trade & Investment"],
+        ["@colinmckerrache","Colin McKerracher","Head of Clean Transport, BloombergNEF; Oslo"],
+        ["@shanaka86","Shanaka Anslem Perera","Independent analyst; AI, geopolitics, sovereignty; Australia"],
+        ["@EVCurveFuturist","Chris Meder","Futurist; electrification; Australia"],
+        ["@G20Australia","Australia G20","Australia's G20 presidency account (closed)"],
+        ["@IndoPacific18","Indo-Pacific","Economic, social & political development of Asia-Pacific"]
+    ]},
+    { title: "Middle East, Africa & Latin America", rows: [
+        ["@araghchi","Seyed Abbas Araghchi","Foreign Minister, Islamic Republic of Iran"],
+        ["@Zwandid","Zane Dangor","LLM (International Law); public servant; South Africa"],
+        ["@naftalibennett","Naftali Bennett","13th Prime Minister of Israel"],
+        ["@JorArguello","Jorge Arg\u00fcello","Ex-Argentinian Ambassador to UN & USA; Fundaci\u00f3n EmbajadaAbierta"],
+        ["@fsalasl","Federico Salas","Ambassador of Mexico"],
+        ["@SizweLo","Sizwe Sikamusi","Polymath; heterodox thinker; South Africa"]
+    ]},
+    { title: "Multilateral & International Organisations", rows: [
+        ["@antonioguterres","Ant\u00f3nio Guterres","Secretary-General, United Nations"],
+        ["@NOIweala","Ngozi Okonjo-Iweala","Director-General, WTO"],
+        ["@MathiasCormann","Mathias Cormann","Secretary-General, OECD"],
+        ["@borgebrende","B\u00f8rge Brende","President & CEO, World Economic Forum"],
+        ["@MSuzman","Mark Suzman","CEO, Bill & Melinda Gates Foundation"],
+        ["@UNDP","UN Development Programme","Working to end poverty, inequality & climate change"],
+        ["@ASteiner","Achim Steiner","Sr Fellow Oxford Martin School; ex-UNDP Admin"],
+        ["@shokonoda","Shoko Noda","UNDP Asst Secy-General; Crisis Bureau Director"],
+        ["@ggraymolina","George Gray Molina","Head Inclusive Growth & Chief Economist, UNDP"],
+        ["@BishowParajuli","Bishow Parajuli","40 yrs UN System; ex-UNRC, WFP India/Yemen/Egypt"],
+        ["@lakshmiunwomen","Lakshmi M Puri","Ex-UN Asst Secy-General; ex-Dep Exec Dir UN Women"],
+        ["@BillGates","Bill Gates","Co-founder Microsoft; Gates Foundation co-chair"],
+        ["@melindagates","Melinda French Gates","Philanthropist; founder Pivotal Ventures; Gates co-chair"],
+        ["@BMGFIndia","Gates Foundation India","Gates Foundation India office"],
+        ["@b20","B20 USA","Business20 community counterpart to G20"],
+        ["@S20_India","S20 India 2023","Science20 engagement group, G20"],
+        ["@U20India","U20 India","Urban20 engagement group, G20"],
+        ["@g20org","G20 United States","Official US G20 presidency account"],
+        ["@LanaLukash","Svetlana Lukash","Ex-G20 Sherpa, Russia"],
+        ["@JonathanBlackUK","Jonathan Black","UK G7/G20 Sherpa"],
+        ["@PriyamGM","Priyam Gandhi-Mody","Exec Dir FEC Council; Global Economic Cooperation; author"],
+        ["@AmbAbhayThakur","Abhay Thakur","G20 Sous Sherpa; Amb Myanmar; ex-JS(N) MEA"]
+    ]},
+    { title: "Sports, Arts & Culture", rows: [
+        ["@msdhoni","MS Dhoni","Ex-India Cricket Captain; entrepreneur"],
+        ["@arrahman","A.R. Rahman","Honorary President Trinity Laban London; music legend"],
+        ["@rickykej","Ricky Kej","3x Grammy winner; Padma Shri; UN Goodwill Amb"],
+        ["@TommyFleetwood1","Tommy Fleetwood","Professional golfer; LA Golf Club"],
+        ["@pgtofindia","PGTI","Professional Golf Tour of India"],
+        ["@TheDGCOpen","The DGC Open","India's leading golf tournament; Delhi Golf Club"],
+        ["@asiantourgolf","Asian Tour","Professional Golf Tour of Asia"],
+        ["@Olympics","The Olympic Games","Official Olympics account"],
+        ["@LylesNoah","Noah Lyles OLY","Olympic Champion; 8x World Champion sprinter"],
+        ["@alliseeisgold","Jordan Burroughs","Olympic Gold Medalist wrestler; 6x World Champion"],
+        ["@NamitaGokhale_","Namita Gokhale","Writer, publisher; JLF Festival Director"],
+        ["@JaipurLitFest","Jaipur Literature Festival","Largest literary festival"],
+        ["@mufaddal_vohra","Mufaddal Vohra","Cricket statistics & content"],
+        ["@FilmHistoryPic","Film History Pics","Indian cinema in rare pictures"],
+        ["@BeerBicepsGuy","Ranveer Allahbadia","Entrepreneur; podcaster; a decade of content"],
+        ["@raghavsachar","Raghav Sachar","Music director, singer, multi-instrumentalist"],
+        ["@1anuradhapal","Anuradha Pal","World's first female Tabla Maestro; Stree Shakti"],
+        ["@RujutaDiwekar","Rujuta Diwekar","Nutritionist; author; farms not malls"],
+        ["@anooshkabathwal","Anooshka Soham Bathwal","Social entrepreneur; women empowerment; Kolkata"]
+    ]},
+    { title: "Other / Personal Interest Follows", rows: [
+        ["@Number10cat","Larry the Cat","Chief Mouser to the Cabinet Office, UK (popular account)"],
+        ["@APompliano","Anthony Pompliano","Entrepreneur & crypto/finance podcaster"],
+        ["@polinapompliano","Polina M. Pompliano","Profiles extraordinary people"],
+        ["@warikoo","Ankur Warikoo","Entrepreneur, author, content creator"],
+        ["@BeerBicepsGuy","Ranveer Allahbadia","Podcaster; entrepreneur"],
+        ["@aaditsh","Aadit Sheth","Co-founder The Narrative; storytelling & comms on X/LinkedIn"],
+        ["@DivaJain2","Diva Jain","Developer; writer; probability & markets"],
+        ["@SystemSunday","Ben Meer","The Systems Guy; author How to Be Good at Life"],
+        ["@PhilosophyAges","Philosophy of Ages","Timeless wisdom; Switzerland"],
+        ["@wisdom_walkss","Wisdom Walk","Reflect. Read. Remember. Reconnect"],
+        ["@amar07x","Ad","Explorer"],
+        ["@amitisinvesting","Amit","Breaking down tech, business & stocks"],
+        ["@earth_tracker","Earth Wanderer","Heritage, travel, sports, nature & wildlife"],
+        ["@ColoursOfWorld1","Colours of the World","Cultural heritage & diversity"],
+        ["@Indus_Lens","IndusLens","India's success stories; global perspectives"],
+        ["@EVDrive360","EVDrive360","EV ownership experience in India"],
+        ["@BhuvanLall","Dr. Bhuvan Lall","Creative entrepreneur; India's Soft Power"],
+        ["@Manmohan4Peace","Manmohan Singh","Collective hope; Farmer; Co-Founder @bharatcollab"],
+        ["@thefaadguy","Aditya","Angel investor; founder Faad Capital; startup threads"],
+        ["@peedeegee","Pratim D Gupta","Journalist / The Bong Lebowski"],
+        ["@TomCruise","Tom Cruise","Actor, producer"],
+        ["@Foxtel","Foxtel","Australian TV entertainment & sports"],
+        ["@StickToCricket","Stick to Cricket","Cricket on The Overlap; BBC commentators"],
+        ["@StarSportsIndia","Star Sports","Indian sports broadcaster"],
+        ["@IndiGo6E","IndiGo","Indian airline"],
+        ["@CEAT_tyres","CEAT Tyres","Indian tyre manufacturer"],
+        ["@goindiastocks","GoIndiaStocks.com","Investor Relations firm; SEBI RA"],
+        ["@sgfintechfest","Singapore FinTech Festival","Global gathering of policy, finance & technology"],
+        ["@immunifyme","ImmunifyMe","Digital health; vaccination tracking; child growth"],
+        ["@lvxventures","LVX","Unlisted investments; LV Angel Fund"],
+        ["@Megatron_ron","Megatron","Breaking news; geopolitics; war monitoring"],
+        ["@itswpceo","World Updates","History, world affairs, satire & exaggerated content"],
+        ["@LeadersJunction","Leaders X Junction","Sharing insights & wisdom of great men"],
+        ["@historyinmemes","Historic Vids","Daily history lessons through memes"],
+        ["@archaeologyart","Archaeology & Art","Archaeology & art history enthusiasts"],
+        ["@FiftyTwoDotIn","Fifty Two","A story every week from the subcontinent"],
+        ["@devex","Devex","Insider journalism on global development"],
+        ["@Hugodixon","Hugo Dixon","Reuters commentator; political entrepreneur"],
+        ["@ARanganathan72","Anand Ranganathan","Author; consultant; contrarian commentator"],
+        ["@ShefVaidya","Shefali Vaidya","Author, speaker; Ananta Leadership Program"],
+        ["@MsMelChen","Melissa Chen","VP Strategy Risks; co-founder Ideas Beyond Borders"],
+        ["@minaguli","Mina Guli","Water advocate; ultramarathon runner"],
+        ["@ElectionWiz","Election Wizard","Election insights; breaking news"],
+        ["@GuntherEagleman","Gunther Eagleman","Political commentator; commentary, opinion & satire"],
+        ["@VivekGRamaswamy","Vivek Ramaswamy","Entrepreneur; Governor candidate Ohio; ex-DOGE"],
+        ["@Chellaney","Dr. Brahma Chellaney","Strategic thinker; professor; author"]
+    ]}
+  ],
+  profession: [
+    { title: "Heads of State & Prime Ministers / Presidents", rows: [
+        ["@narendramodi","Narendra Modi","PM, India"],
+        ["@realDonaldTrump","Donald J. Trump","45th & 47th President, USA"],
+        ["@JoeBiden","Joe Biden","46th President, USA"],
+        ["@naftalibennett","Naftali Bennett","13th PM, Israel"],
+        ["@MrKRudd","Kevin Rudd","Ex-PM, Australia; President Asia Society"],
+        ["@myogiadityanath","Yogi Adityanath","Chief Minister, Uttar Pradesh"]
+    ]},
+    { title: "Cabinet Ministers \u2014 India", rows: [
+        ["@drsjaishankar","Dr. S. Jaishankar","External Affairs"],
+        ["@nsitharamanoffc","Nirmala Sitharaman Office","Finance"],
+        ["@rajnathsingh","Rajnath Singh","Defence"],
+        ["@HardeepSPuri","Hardeep Singh Puri","Petroleum & Natural Gas"],
+        ["@dpradhanbjp","Dharmendra Pradhan","Education"],
+        ["@byadavbjp","Bhupender Yadav","Environment"],
+        ["@AshwiniVaishnaw","Ashwini Vaishnaw","Railways, I&B, Electronics & IT"],
+        ["@mansukhmandviya","Dr Mansukh Mandaviya","Labour & Sports"],
+        ["@ianuragthakur","Anurag Thakur","Ex-I&B Minister; MP"],
+        ["@aksharmaBharat","A K Sharma","Energy & Urban Dev, UP Govt; ex-IAS"]
+    ]},
+    { title: "Diplomats & Ambassadors \u2014 India (Current & Former)", rows: [
+        ["@ruchirakamboj","Ruchira Kamboj","Ex-Perm Rep UN"],
+        ["@harshvshringla","Harsh V Shringla","Ex-Foreign Secretary; G20 Sherpa"],
+        ["@VGokhale59","Vijay Gokhale","Ex-Foreign Secretary; China expert"],
+        ["@tca_raghavan","Tca Raghavan","Ex-HC Pakistan & Singapore"],
+        ["@Ajaybis","Ajay Bisaria","Ex-envoy Canada/Pakistan; ORF Fellow"],
+        ["@KanwalSibal","Kanwal Sibal","Ex-Foreign Secretary; Chancellor JNU"],
+        ["@deepagopalan","Deepa Gopalan Wadhwa","Ex-Amb Sweden, Qatar, Japan"],
+        ["@AkbaruddinIndia","Syed Akbaruddin","Ex-Perm Rep UN; Dean Kautilya"],
+        ["@JawedAshraf5","Jawed Ashraf","Ex-Amb France; Chairman ITPO"],
+        ["@VDoraiswami","Vikram Doraiswami","HC to UK"],
+        ["@NagNaidu08","Nagaraj Naidu Kakanur","Addl Secy MEA; ex-JS G20"],
+        ["@lakshmiunwomen","Lakshmi M Puri","Ex-UN Asst SG; ex-UN Women"],
+        ["@AmbSKReddy","Suresh Reddy","Amb to Egypt; ex-Amb Brazil, ASEAN"],
+        ["@Naman_ifs","Naman Upadhyaya","First Secretary, India in ROK"],
+        ["@AmbAbhayThakur","Abhay Thakur","Amb Myanmar; ex-G20 Sous Sherpa"],
+        ["@IndiaUNNewYork","India at UN NY","Permanent Mission of India, UN"]
+    ]},
+    { title: "Foreign Diplomats & Envoys (Based in / accredited to India)", rows: [
+        ["@JapanAmbIndia","ONO Keiichi","Amb of Japan to India & Bhutan"],
+        ["@USAmbIndia","Ambassador Sergio Gor","US Amb to India & SE Asia"],
+        ["@DMickeviciene","Diana Mickeviciene","Lithuania Amb to India; ex-China"],
+        ["@FranceinIndia","French Embassy India","Embassy of France in India"],
+        ["@barryofarrell","Barry O'Farrell","Ex-HC Australia to India"],
+        ["@JonathanBlackUK","Jonathan Black","UK G7/G20 Sherpa, 10 Downing St"],
+        ["@Videluca59","Vincenzo De Luca","Ambassador (Italy)"],
+        ["@VanberghenEU","Prof Cristina Vanberghen","Brussels; EU policy"]
+    ]},
+    { title: "Multilateral Organisations", rows: [
+        ["@antonioguterres","Ant\u00f3nio Guterres","SG, United Nations"],
+        ["@NOIweala","Ngozi Okonjo-Iweala","DG, WTO"],
+        ["@MathiasCormann","Mathias Cormann","SG, OECD"],
+        ["@borgebrende","B\u00f8rge Brende","President & CEO, WEF"],
+        ["@MSuzman","Mark Suzman","CEO, Gates Foundation"],
+        ["@UNDP","UN Development Programme","170 countries & territories"],
+        ["@ASteiner","Achim Steiner","Ex-UNDP Admin; Sr Fellow Oxford Martin"],
+        ["@shokonoda","Shoko Noda","UNDP Asst SG; Crisis Bureau"],
+        ["@ggraymolina","George Gray Molina","Chief Economist, UNDP"],
+        ["@BishowParajuli","Bishow Parajuli","40 yrs UN System; ex-WFP India"],
+        ["@BillGates","Bill Gates","Gates Foundation co-chair"],
+        ["@melindagates","Melinda French Gates","Gates Foundation co-chair; Pivotal Ventures"]
+    ]},
+    { title: "Economists & Finance Professionals", rows: [
+        ["@ojblanchard1","Olivier Blanchard","MIT Emeritus; Peterson Institute; ex-IMF Chief Economist"],
+        ["@JosephEStiglitz","Joseph E. Stiglitz","Nobel laureate; Columbia"],
+        ["@LHSummers","Lawrence H. Summers","Harvard; ex-US Treasury Secretary"],
+        ["@DrRaghuram_Rajan","Raghuram Rajan","Chicago Booth; ex-RBI Governor"],
+        ["@dravirmani","Dr Arvind Virmani","EAC-PM; ex-IMF ED"],
+        ["@neelkanthmishra","Neelkanth Mishra","EAC-PM; Axis Bank Chief Economist"],
+        ["@suman_bery","Suman K. Bery","VC NITI Aayog"],
+        ["@RayDalio","Ray Dalio","Founder Bridgewater; Principles author"],
+        ["@nfergus","Niall Ferguson","Hoover Institution; Stanford; author"],
+        ["@nntaleb","Nassim Nicholas Taleb","Black Swan author; flaneur"],
+        ["@vitaliyk","Vitaliy Katsenelson","Value investor; IMA CEO"],
+        ["@AvinashPersau15","Avinash Persaud","Finance & public policy"],
+        ["@andymukherjee70","Andy Mukherjee","Bloomberg Opinion columnist"],
+        ["@monikahalan","Monika Halan","Personal finance author; SEBI Committee"],
+        ["@NileshShah68","Nilesh Shah","Kotak AMC; Mutual Fund Sahi Hai"],
+        ["@porinju","Porinju Veliyath","Equity Intelligence India"],
+        ["@VijayKedia1","Vijay Kedia","Investor; speaker IIMs, IIT; 3x TEDx"]
+    ]},
+    { title: "Think Tank & Policy Research Professionals", rows: [
+        ["@samirsaran","Samir Saran","President, ORF"],
+        ["@MohanCRaja","C. Raja Mohan","Carnegie India ex-Director; Indian Express columnist"],
+        ["@HindolSengupta","Hindol Sengupta","Historian; 13 books; Prof international relations"],
+        ["@sreeramchaulia","Sreeram Chaulia","Dean, Jindal School of International Affairs"],
+        ["@amitabhmattoo","Amitabh Mattoo","Dean School of Int'l Studies JNU"],
+        ["@arunmsukumar","Arun Sukumar","Ashoka Univ; ex-Leiden & The Hague Programme"],
+        ["@tanvi_madan","Tanvi Madan","Sr Fellow Brookings; US-India-China"],
+        ["@kyleichan","Kyle Chan","Brookings Fellow; China tech policy"],
+        ["@ProfTalmadge","Prof Talmadge","MIT Prof & Brookings Sr Fellow"],
+        ["@wrmead","Walter Russell Mead","Hudson Institute; WSJ columnist"],
+        ["@vali_nasr","Vali Nasr","Prof Johns Hopkins SAIS; ex-State Dept"],
+        ["@vtchakarova","Velina Tchakarova","Geopolitical Strategist; coined #Dragonbear"],
+        ["@AgatheDemarais","Agathe Demarais","ECFR geoeconomics; FP columnist"],
+        ["@DerekJGrossman","Derek J. Grossman","Founder Indo-Pacific Solutions; CNAS Sr Fellow"],
+        ["@tilakdevasher1","Tilak Devasher","Pakistan expert; strategic affairs author"],
+        ["@Chellaney","Dr. Brahma Chellaney","Professor, strategic thinker; author"],
+        ["@nitingokhale","Nitin A. Gokhale","National Security Analyst; defence journalist"]
+    ]},
+    { title: "Technology & AI Leaders", rows: [
+        ["@sama","Sam Altman","CEO, OpenAI"],
+        ["@tim_cook","Tim Cook","CEO, Apple"],
+        ["@satyanadella","Satya Nadella","Chairman & CEO, Microsoft"],
+        ["@sundarpichai","Sundar Pichai","CEO, Google & Alphabet"],
+        ["@karpathy","Andrej Karpathy","AI researcher; ex-OpenAI, Tesla"],
+        ["@demishassabis","Demis Hassabis","CEO Google DeepMind; Nobel Chemistry 2024"],
+        ["@kaifulee","Kai-Fu Lee","CEO 01.ai; Chairman Sinovation; China AI"],
+        ["@bhash","Bhavish Aggarwal","OLA / Krutrim AI"],
+        ["@nvidia","NVIDIA","GPU/AI compute; official account"],
+        ["@Nandan_Nilekani","Nandan Nilekani","Co-founder Infosys; DPI architect"],
+        ["@svembu","Sridhar Vembu","Chief Scientist, Zoho"],
+        ["@debjani_ghosh_","Debjani Ghosh","NITI Aayog; ex-NASSCOM President"],
+        ["@patrickc","Patrick Collison","CEO, Stripe"],
+        ["@jack","Jack Dorsey","Co-founder Twitter/X & Square/Block"],
+        ["@ashtom","Thomas Dohmke","Building EntireHQ; ex-CEO GitHub"],
+        ["@levie","Aaron Levie","CEO, Box"],
+        ["@Benioff","Marc Benioff","CEO, Salesforce; Chair, Time"],
+        ["@cristiano_amon","Cristiano R. Amon","President & CEO, Qualcomm"],
+        ["@balajis","Balaji Srinivasan","Author, The Network State"]
+    ]},
+    { title: "Journalists & Media Anchors \u2014 India", rows: [
+        ["@palkisu","Palki Sharma","FirstPost / WION anchor; foreign affairs"],
+        ["@sardesairajdeep","Rajdeep Sardesai","India Today Group; senior journalist"],
+        ["@rahulkanwal","Rahul Kanwal","CEO & Editor-in-Chief, NDTV"],
+        ["@anjanaomkashyap","Anjana Om Kashyap","Sr Managing Editor, Aaj Tak"],
+        ["@VishnuNDTV","Vishnu Som","NDTV; Ramnath Goenka award; author"],
+        ["@AdityaRajKaul","Aditya Raj Kaul","Sr Executive Editor NDTV; geopolitics & security"],
+        ["@soniasinghIndia","Sonia Singh","Author; formerly NDTV; Cambridge"],
+        ["@latha_venkatesh","Latha Venkatesh","Consulting Editor CNBC-TV18"],
+        ["@vijaita","Vijaita Singh","Deputy Editor, The Hindu"],
+        ["@ItsShubhangi","Shubhangi Sharma","International affairs, FirstPost/Network18"],
+        ["@dhume","Sadanand Dhume","CFR Sr Fellow; WSJ Columnist"],
+        ["@nandu79","Nandagopal Rajan","CEO Indian Express Digital"],
+        ["@MattooShashank","Shashank Mattoo","America Correspondent, HT"],
+        ["@matthan","Rahul Matthan","Tech lawyer; Trilegal; columnist"],
+        ["@andymukherjee70","Andy Mukherjee","Bloomberg Opinion"],
+        ["@chatukhor","Uttam Sengupta","Journalist; columnist New Delhi"]
+    ]},
+    { title: "Journalists & Media \u2014 International", rows: [
+        ["@EdwardGLuce","Edward Luce","Associate Ed, FT; author Zbig"],
+        ["@SkyYaldaHakim","Yalda Hakim","Sky News lead anchor; Afghan-Australian"],
+        ["@DominicWaghorn","Dominic Waghorn","Sky News International Affairs Editor"],
+        ["@glcarlstrom","Gregg Carlstrom","Middle East, The Economist"],
+        ["@TuckerCarlson","Tucker Carlson","Conservative commentator/podcaster"],
+        ["@StephenMcDonell","Stephen McDonell","China Correspondent, BBC"],
+        ["@selinawangtv","Selina Wang","Sr White House Correspondent, ABC News"],
+        ["@TerryMoran","Terry Moran","Independent journalist"],
+        ["@atrupar","Aaron Rupar","Journalist; Public Notice newsletter"],
+        ["@nxthompson","Nicholas Thompson","CEO, The Atlantic"],
+        ["@MarioNawfal","Mario Nawfal","Largest live show on X; investor"]
+    ]},
+    { title: "Climate & Energy Experts", rows: [
+        ["@JohnKerry","John Kerry","Ex-US Climate Envoy; ex-Secretary of State"],
+        ["@jrockstrom","Johan Rockstr\u00f6m","Director PIK Climate; planetary boundaries"],
+        ["@GhoshArunabha","Arunabha Ghosh","CEO CEEW; Special Envoy COP30"],
+        ["@Bh_Chandra","Chandra Bhushan","Environmentalist; CEO iForest Global"],
+        ["@nick_bridge_uk","Nick Bridge","UK PM Special Rep for Climate Change"],
+        ["@vnigamsinha","Vaishali Nigam Sinha","Co-Founder ReNew Corp; sustainability"],
+        ["@colinmckerrache","Colin McKerracher","Head Clean Transport, BloombergNEF"],
+        ["@BjornLomborg","Bjorn Lomborg","Copenhagen Consensus; climate pragmatist"],
+        ["@minaguli","Mina Guli","Water advocate; ultramarathon runner"],
+        ["@jasonhickel","Jason Hickel","Prof ICTA-UAB; degrowth; Less is More"],
+        ["@kellysgallagher","Kelly Sims Gallagher","Dean Fletcher School; climate policy"],
+        ["@rickykej","Ricky Kej","Grammy winner; UN Goodwill Amb UNCC"],
+        ["@Alekhya_Datta","Er. Alekhya Datta","Director Electricity & Renewables, TERI"]
+    ]},
+    { title: "Health & Life Sciences", rows: [
+        ["@adarpoonawalla","Adar Poonawalla","CEO, Serum Institute of India"],
+        ["@SerumInstIndia","Serum Institute India","World's largest vaccine manufacturer"],
+        ["@BharatBiotech","Bharat Biotech","Vaccine manufacturer; Covaxin"],
+        ["@drsangitareddy","Dr. Sangita Reddy","Jt MD Apollo Hospitals; ex-FICCI President"],
+        ["@Atul_Gawande","Atul Gawande","Surgeon; author Being Mortal; ex-USAID"],
+        ["@FaheemYounus","Faheem Younus MD","Prof Medicine; Johns Hopkins-linked"],
+        ["@BallouxFrancois","Prof Francois Balloux","Director UCL Genetics; infectious disease"],
+        ["@BillGates","Bill Gates","Gates Foundation; global health"],
+        ["@melindagates","Melinda French Gates","Gates Foundation; women & girls"]
+    ]},
+    { title: "Civil Society, Development & Public Service", rows: [
+        ["@AbhijitBanerjee","Abhijit Banerjee","MIT Prof; Nobel Economics 2019; J-PAL"],
+        ["@Janaagraha1","Janaagraha","Urban quality of life; citizen-govt collaboration"],
+        ["@sachinramjadhav","Sachin Jadhav","IAS, Odisha"],
+        ["@arvindpadhee","Arabinda K Padhee","IAS; Addl Chief Secretary Odisha"],
+        ["@rabhishek1982","Ramesh Abhishek","IAS (Retd); ex-Secy DPIIT"],
+        ["@PrashantKishor","Prashant Kishor","Political strategist; social reformer"],
+        ["@lakshmiunwomen","Lakshmi M Puri","Ex-UN Women; Amb of India"],
+        ["@BishowParajuli","Bishow Parajuli","40 yrs UN system; WFP/UNDP veteran"],
+        ["@anooshkabathwal","Anooshka Soham Bathwal","Social entrepreneur; women empowerment"],
+        ["@Raivineet","Vineet Rai","Founder Aavishkaar; impact investing"]
+    ]}
+  ],
+  topical:    [
+    { title: "G20, Global Governance & Multilateral Diplomacy", rows: [
+        ["@harshvshringla","Harsh V Shringla","India ex-G20 Chief Coordinator & Foreign Secy"],
+        ["@AmbAbhayThakur","Abhay Thakur","G20 Sous Sherpa; MEA"],
+        ["@NagNaidu08","Nagaraj Naidu","ex-JS G20, MEA"],
+        ["@LanaLukash","Svetlana Lukash","Ex-G20 Sherpa, Russia"],
+        ["@JonathanBlackUK","Jonathan Black","UK G7/G20 Sherpa"],
+        ["@JorArguello","Jorge Arg\u00fcello","Ex-Argentine Amb UN; Fundaci\u00f3n EmbajadaAbierta"],
+        ["@joergkukies","J\u00f6rg Kukies","Ex-German Finance Minister; G7/G20"],
+        ["@borgebrende","B\u00f8rge Brende","WEF President; global convener"],
+        ["@MathiasCormann","Mathias Cormann","OECD SG; G20 policy"],
+        ["@NOIweala","Ngozi Okonjo-Iweala","WTO DG; trade governance"],
+        ["@antonioguterres","Ant\u00f3nio Guterres","UN SG"],
+        ["@UNDP","UN Development Programme","SDG delivery"],
+        ["@b20","B20 USA","Business20, G20"],
+        ["@S20_India","S20 India 2023","Science20, G20 India"],
+        ["@U20India","U20 India","Urban20, G20 India"],
+        ["@g20org","G20 United States","US G20 presidency"],
+        ["@samirsaran","Samir Saran","ORF President; G20 engagement"],
+        ["@raisinadialogue","Raisina Dialogue","India's flagship geopolitics forum"],
+        ["@PriyamGM","Priyam Gandhi-Mody","FEC Council; Global Economic Cooperation"],
+        ["@sama18","Nishhant Samaa","BRICS CCI; G20 YEA India delegate"],
+        ["@kapiljaink3","Kapil Jain","B20 Task Force; SDG advocacy"],
+        ["@MukeshAghi","Mukesh Aghi","President USIBC; India-US strategic partnership"],
+        ["@USAmbKeshap","Atul Keshap","Ex-28yr State Dept; USIBC"]
+    ]},
+    { title: "India Economic Policy & NITI Aayog Network", rows: [
+        ["@NITIAayog","NITI Aayog","Apex policy body, GoI"],
+        ["@ShamikaRavi","Prof. Shamika Ravi","NITI Aayog; EAC-PM"],
+        ["@suman_bery","Suman K. Bery","VC, NITI Aayog"],
+        ["@dravirmani","Dr Arvind Virmani","EAC-PM; EGROW Foundation"],
+        ["@neelkanthmishra","Neelkanth Mishra","EAC-PM; Axis Bank Chief Economist"],
+        ["@RajivKumar1","Rajiv Kumar","Ex-VC NITI Aayog; Pahle India Foundation"],
+        ["@APanagariya","Arvind Panagariya","Chairman 16th Finance Commission; ex-NITI VC"],
+        ["@bibekdebroy","Bibek Debroy","Ex-Chairman EAC-PM"],
+        ["@paramiyer_","Param Iyer","Ex-CEO NITI Aayog; World Bank India"],
+        ["@DasShaktikanta","Shaktikanta Das","PS-2 to PM; ex-RBI Governor"],
+        ["@debjani_ghosh_","Debjani Ghosh","NITI Frontier Tech Hub; ex-NASSCOM"],
+        ["@AdilZainulbhai","Adil Zainulbhai","Chairman Capacity Building Commission"],
+        ["@ICRIER","ICRIER","India's premier trade & policy think-tank"],
+        ["@rabhishek1982","Ramesh Abhishek","Ex-Secy DPIIT; Make in India; Startup India"]
+    ]},
+    { title: "Indo-Pacific, China & Strategic Competition", rows: [
+        ["@MohanCRaja","C. Raja Mohan","India's leading foreign policy analyst"],
+        ["@VGokhale59","Vijay Gokhale","China Watcher; Carnegie India; ex-Foreign Secy"],
+        ["@sreeramchaulia","Sreeram Chaulia","Dean Jindal Int'l Affairs; strategic affairs"],
+        ["@amitabhmattoo","Amitabh Mattoo","School of Int'l Studies JNU; Australia expert"],
+        ["@Chellaney","Dr. Brahma Chellaney","Strategic professor; China & water wars"],
+        ["@nitingokhale","Nitin A. Gokhale","National security analyst; defence"],
+        ["@DerekJGrossman","Derek J. Grossman","RAND/CNAS Indo-Pacific expert; USC Prof"],
+        ["@kaifulee","Kai-Fu Lee","China AI; CEO 01.ai; Sinovation"],
+        ["@tanvi_madan","Tanvi Madan","Brookings; India-China-US triangle"],
+        ["@vali_nasr","Vali Nasr","Hopkins SAIS; Iran & Middle East expert"],
+        ["@ProfTalmadge","Prof Talmadge","MIT; nuclear weapons & military ops"],
+        ["@tilakdevasher1","Tilak Devasher","Pakistan expert; author"],
+        ["@JapanAmbIndia","ONO Keiichi","Japan Amb to India; QUAD partner"],
+        ["@MrKRudd","Kevin Rudd","Ex-PM Australia; Asia Society; China expert"],
+        ["@ISASNus","ISAS NUS","South Asian studies; Singapore"],
+        ["@IndoPacific18","Indo-Pacific","Asia-Pacific economic & political monitoring"],
+        ["@StephenMcDonell","Stephen McDonell","BBC China Correspondent"],
+        ["@kyleichan","Kyle Chan","Brookings; China tech & chips"],
+        ["@WillyShih_atHBS","Willy Shih","HBS; supply chains & semiconductor policy"],
+        ["@vtchakarova","Velina Tchakarova","Geopolitical Strategist; #Dragonbear"]
+    ]},
+    { title: "Make in India, Startups & Digital Economy", rows: [
+        ["@nasscom","NASSCOM","IT industry; digital economy"],
+        ["@Nandan_Nilekani","Nandan Nilekani","DPI; Aadhaar; Infosys co-founder"],
+        ["@debjani_ghosh_","Debjani Ghosh","NASSCOM ex-President; NITI Frontier Tech"],
+        ["@bhash","Bhavish Aggarwal","OLA/Krutrim; India's LLM"],
+        ["@svembu","Sridhar Vembu","Zoho; SaaS from India"],
+        ["@Nithin0dha","Nithin Kamath","Zerodha; fintech from India"],
+        ["@GoenkaPk","Pawan K Goenka","Chairman INSPACe; Make in India"],
+        ["@gangadharansind","Sindhu Gangadharan","SAP Labs India; Chairperson NASSCOM"],
+        ["@sbikh","Sanjeev Bikhchandani","Naukri.com; internet entrepreneurship"],
+        ["@SharmaShradha","Shradha Sharma","YourStory; startup ecosystem voice"],
+        ["@rabhishek1982","Ramesh Abhishek","Ex-Secy DPIIT; Make in India; Startup India"],
+        ["@Raivineet","Vineet Rai","Aavishkaar; impact investing; SANKALP"],
+        ["@CIITweets","CII","Industry-policy interface"],
+        ["@manuchopra42","Manu Chopra","AI data & eval for Global South; Stanford CS"],
+        ["@perplexity_ai","Perplexity AI","AI-powered search; new age tech product"],
+        ["@deedydas","Deedy","Menlo Ventures; Anthropic investor; Glean"],
+        ["@snowmaker","Jared Friedman","Y Combinator partner"],
+        ["@PittieAditya","Aditya Pittie","Entrepreneur; #ViksitBharatIndia2047"],
+        ["@IND2047","INDVest","India 2047 investor forum"]
+    ]},
+    { title: "Climate Action, Energy Transition & Sustainability", rows: [
+        ["@JohnKerry","John Kerry","Ex-US Climate Envoy; Sec of State"],
+        ["@jrockstrom","Johan Rockstr\u00f6m","Planetary Boundaries; PIK Climate Director"],
+        ["@GhoshArunabha","Arunabha Ghosh","CEEW CEO; COP30 India Special Envoy"],
+        ["@teriin","TERI","Energy & environment research"],
+        ["@TheICCT_India","ICCT India","Clean transportation research"],
+        ["@isolaralliance","International Solar Alliance","India-led; solar for energy access"],
+        ["@Bh_Chandra","Chandra Bhushan","iForest Global; climate policy"],
+        ["@nick_bridge_uk","Nick Bridge","UK PM Special Rep for Climate"],
+        ["@vnigamsinha","Vaishali Nigam Sinha","ReNew Corp; sustainability"],
+        ["@colinmckerrache","Colin McKerracher","BloombergNEF; clean transport"],
+        ["@Alekhya_Datta","Er. Alekhya Datta","TERI; Electricity & Renewables"],
+        ["@grnfrontiercap","Green Frontier Capital","India's first climate VC fund"],
+        ["@BjornLomborg","Bjorn Lomborg","Copenhagen Consensus; cost-effective climate"],
+        ["@jasonhickel","Jason Hickel","Degrowth; Less is More"],
+        ["@kellysgallagher","Kelly Sims Gallagher","Fletcher School; climate policy research"],
+        ["@minaguli","Mina Guli","Water advocacy; Run Blue"],
+        ["@beeindiadigital","Bureau of Energy Efficiency","GoI; energy intensity reduction"],
+        ["@rickykej","Ricky Kej","Grammy winner; UN Goodwill Amb UNCC"],
+        ["@unplasticday","UnPlasticDay","#BeatPlasticPollution advocacy"],
+        ["@ASteiner","Achim Steiner","Oxford Martin; ex-UNDP Admin; sustainability"]
+    ]},
+    { title: "Artificial Intelligence & Digital Futures", rows: [
+        ["@sama","Sam Altman","CEO, OpenAI; frontier AI"],
+        ["@karpathy","Andrej Karpathy","AI research; LLM foundations; ex-Tesla/OpenAI"],
+        ["@demishassabis","Demis Hassabis","CEO DeepMind; Nobel Chemistry 2024"],
+        ["@kaifulee","Kai-Fu Lee","AI in Asia; CEO 01.ai; Sinovation"],
+        ["@satyanadella","Satya Nadella","Microsoft/Azure AI"],
+        ["@sundarpichai","Sundar Pichai","Google/DeepMind/Gemini"],
+        ["@nvidia","NVIDIA","GPU/compute for AI"],
+        ["@debjani_ghosh_","Debjani Ghosh","AI policy; NITI Frontier Tech Hub"],
+        ["@bhash","Bhavish Aggarwal","Krutrim \u2014 India LLM"],
+        ["@Nandan_Nilekani","Nandan Nilekani","DPI & AI for India"],
+        ["@nasscom","NASSCOM","India's tech industry; AI policy"],
+        ["@perplexity_ai","Perplexity AI","AI search & answers"],
+        ["@manuchopra42","Manu Chopra","AI data for Global South"],
+        ["@balajis","Balaji Srinivasan","Network State; crypto; AI futures"],
+        ["@patrickc","Patrick Collison","Stripe; tech & progress"],
+        ["@lexfridman","Lex Fridman","AI & robotics podcast"],
+        ["@dwarkesh_sp","Dwarkesh Patel","Long-form AI/science interviews"],
+        ["@heyshrutimishra","Shruti Mishra","AI & robotics journalism"],
+        ["@rowancheung","Rowan Cheung","The Rundown AI; 2M+ readers"],
+        ["@heykahn","Zain Kahn","AI newsletter 2M+ readers"],
+        ["@DrEliDavid","Dr. Eli David","AI researcher & entrepreneur"],
+        ["@snowmaker","Jared Friedman","Y Combinator; AI startups"],
+        ["@deedydas","Deedy","Menlo Ventures; Anthropic investor"]
+    ]},
+    { title: "India's Diplomatic Outreach & Key Connection Nodes", rows: [
+        ["@IndianDiplomacy","Indian Diplomacy MEA","India's Public Diplomacy, MEA"],
+        ["@IndiaUNNewYork","India at UN NY","Permanent Mission of India, UN"],
+        ["@IndiaInShanghai","India In Shanghai","Consulate General of India, Shanghai"],
+        ["@raisinadialogue","Raisina Dialogue","India's flagship geopolitics conclave"],
+        ["@ISASNus","ISAS NUS","South Asian Studies, NUS Singapore"],
+        ["@MohanCRaja","C. Raja Mohan","India's foremost foreign policy analyst"],
+        ["@sreeramchaulia","Sreeram Chaulia","Jindal Int'l Affairs; 'India in the World' podcast"],
+        ["@amitabhmattoo","Amitabh Mattoo","JNU; AIIA; Defence Staff College"],
+        ["@DerekJGrossman","Derek J. Grossman","Indo-Pacific Solutions; CNAS"],
+        ["@tanvi_madan","Tanvi Madan","Brookings; US-India-China triangle"],
+        ["@ab_decodes","Arjun Bhagat Decodes","Foreign policy & geopolitics educator"],
+        ["@USAmbIndia","Ambassador Sergio Gor","US Amb to India"],
+        ["@JapanAmbIndia","ONO Keiichi","Japan Amb to India"],
+        ["@DMickeviciene","Diana Mickeviciene","Lithuania Amb to India"],
+        ["@FranceinIndia","French Embassy India","France in India"],
+        ["@barryofarrell","Barry O'Farrell","Ex-HC Australia to India"]
+    ]},
+    { title: "Global Media & Influential Voices (Outreach Targets)", rows: [
+        ["@EdwardGLuce","Edward Luce","FT; US/India coverage"],
+        ["@glcarlstrom","Gregg Carlstrom","The Economist; Middle East/Asia"],
+        ["@SkyYaldaHakim","Yalda Hakim","Sky News; BBC; global reach"],
+        ["@DominicWaghorn","Dominic Waghorn","Sky News Diplomatic Editor"],
+        ["@StephenMcDonell","Stephen McDonell","BBC China Correspondent"],
+        ["@nxthompson","Nicholas Thompson","CEO, The Atlantic"],
+        ["@benthompson","Ben Thompson","Stratechery; global tech business audience"],
+        ["@AgatheDemarais","Agathe Demarais","ECFR; FP columnist; sanctions expert"],
+        ["@dhume","Sadanand Dhume","CFR Sr Fellow; WSJ Columnist; India coverage"],
+        ["@MattooShashank","Shashank Mattoo","HT America Correspondent; India Today ORF alum"],
+        ["@MarioNawfal","Mario Nawfal","Largest live show on X; 700+ startup investor"],
+        ["@APompliano","Anthony Pompliano","Entrepreneur & daily podcast; finance audience"],
+        ["@lexfridman","Lex Fridman","AI & tech podcast; massive global audience"],
+        ["@dwarkesh_sp","Dwarkesh Patel","In-depth AI/science podcast; rising influence"],
+        ["@nfergus","Niall Ferguson","Hoover; WSJ/FT; geopolitics & history audience"]
+    ]}
+  ]
+};
+
+const ABBR = {
+  'EAC-PM': 'Economic Advisory Council to the Prime Minister',
+  'INSPACe': 'Indian National Space Promotion and Authorisation Centre',
+  'NASSCOM': 'National Association of Software and Service Companies',
+  'DPIIT': 'Department for Promotion of Industry & Internal Trade',
+  'AIIMS': 'All India Institute of Medical Sciences',
+  'USIBC': 'US-India Business Council',
+  'ISAS': 'Institute of South Asian Studies',
+  'BRICS': 'Brazil, Russia, India, China, South Africa',
+  'UNCC': 'United Nations Climate Change',
+  'UNDP': 'United Nations Development Programme',
+  'ECFR': 'European Council on Foreign Relations',
+  'CAQM': 'Commission for Air Quality Management',
+  'FICCI': 'Federation of Indian Chambers of Commerce & Industry',
+  'CEEW': 'Council on Energy, Environment and Water',
+  'ICCT': 'International Council on Clean Transportation',
+  'CNAS': 'Center for a New American Security',
+  'OECD': 'Organisation for Economic Co-operation and Development',
+  'AIIA': 'Australian Institute of International Affairs',
+  'SAIS': 'School of Advanced International Studies',
+  'FCDO': 'Foreign, Commonwealth & Development Office',
+  'RAND': 'Research and Development Corporation (think tank)',
+  'QUAD': 'Quadrilateral Security Dialogue',
+  'IBEF': 'India Brand Equity Foundation',
+  'SEBI': 'Securities and Exchange Board of India',
+  'ITPO': 'India Trade Promotion Organisation',
+  'DOGE': 'Department of Government Efficiency',
+  'NITI': 'National Institution for Transforming India',
+  'TERI': 'The Energy and Resources Institute',
+  'WEF': 'World Economic Forum',
+  'WTO': 'World Trade Organization',
+  'IMF': 'International Monetary Fund',
+  'RBI': 'Reserve Bank of India',
+  'IFC': 'International Finance Corporation',
+  'ADB': 'Asian Development Bank',
+  'DPI': 'Digital Public Infrastructure',
+  'MEA': 'Ministry of External Affairs',
+  'GoI': 'Government of India',
+  'BJP': 'Bharatiya Janata Party',
+  'INC': 'Indian National Congress',
+  'RSS': 'Rashtriya Swayamsevak Sangh',
+  'NUS': 'National University of Singapore',
+  'PIK': 'Potsdam Institute for Climate Impact Research',
+  'ISA': 'International Solar Alliance',
+  'BEE': 'Bureau of Energy Efficiency',
+  'CFR': 'Council on Foreign Relations',
+  'ORF': 'Observer Research Foundation',
+  'JNU': 'Jawaharlal Nehru University',
+  'IIT': 'Indian Institute of Technology',
+  'IIM': 'Indian Institute of Management',
+  'HBS': 'Harvard Business School',
+  'MIT': 'Massachusetts Institute of Technology',
+  'LSE': 'London School of Economics',
+  'NYT': 'New York Times',
+  'WSJ': 'Wall Street Journal',
+  'AMC': 'Asset Management Company',
+  'NSA': 'National Security Adviser',
+  'CII': 'Confederation of Indian Industry',
+  'ISB': 'Indian School of Business',
+  'IAS': 'Indian Administrative Service',
+  'IFS': 'Indian Foreign Service',
+  'CEA': 'Chief Economic Adviser',
+  'CEO': 'Chief Executive Officer',
+  'CIO': 'Chief Investment Officer',
+  'JLF': 'Jaipur Literature Festival',
+  'LLM': 'Master of Laws',
+  'FDI': 'Foreign Direct Investment',
+  'GDP': 'Gross Domestic Product',
+  'PPP': 'Public-Private Partnership',
+  'MoD': 'Ministry of Defence',
+  'MoS': 'Minister of State',
+  'FT': 'Financial Times',
+  'UN': 'United Nations',
+  'G20': 'Group of Twenty',
+  'G7': 'Group of Seven',
+  'PM': 'Prime Minister',
+  'CM': 'Chief Minister',
+  'HC': 'High Commissioner',
+  'MP': 'Member of Parliament',
+  'LS': 'Lok Sabha',
+  'RS': 'Rajya Sabha',
+  'VC': 'Vice Chairman',
+  'SG': 'Secretary-General',
+  'DG': 'Director-General',
+  'VP': 'Vice President',
+  'MD': 'Managing Director',
+  'Jt': 'Joint',
+  'Sr': 'Senior',
+  'Amb': 'Ambassador',
+  'ex-': 'former ',
+  'Retd': 'Retired',
+  'Addl': 'Additional',
+  'Secy': 'Secretary',
+  'Asst': 'Assistant',
+  'Dep': 'Deputy',
+  'Perm': 'Permanent',
+  'Rep': 'Representative',
+  'Exec': 'Executive',
+  'Dir': 'Director',
+};
+
+function expandAbbr(text) {
+  let result = text;
+  // Sort by length descending so longer abbreviations match before shorter ones
+  const sorted = Object.entries(ABBR).sort((a, b) => b[0].length - a[0].length);
+  for (const [abbr, full] of sorted) {
+    const escaped = abbr.replace(/[-+()]/g, '\\$&');
+    const re = new RegExp('(?<![\\w-])' + escaped + '(?![\\w-])', 'g');
+    result = result.replace(re, `<span class="abbr-expanded" title="${abbr}"><strong>${abbr}</strong> <em>(${full})</em></span>`);
+  }
+  return result;
+}
+
+function toggleAbbr(td) {
+  const span = td.querySelector('.note-text');
+  if (td.classList.contains('expanded')) {
+    span.innerHTML = decodeURIComponent(span.dataset.short);
+    td.classList.remove('expanded');
+  } else {
+    span.innerHTML = expandAbbr(decodeURIComponent(span.dataset.short));
+    td.classList.add('expanded');
+  }
+}
+
+function renderSubs(sectionId, groups) {
+  const container = document.getElementById(sectionId + '-subs');
+  groups.forEach(group => {
+    const div = document.createElement('div');
+    div.className = 'sub';
+    const rows = group.rows.map(r => {
+      const hasAbbr = Object.keys(ABBR).some(a => {
+        const re = new RegExp('(?<![\\w-])' + a.replace(/[-+]/g,'\\$&') + '(?![\\w-])', '');
+        return re.test(r[2]);
+      });
+      const noteCell = hasAbbr
+        ? `<td class="note" onclick="toggleAbbr(this)"><span class="note-text" data-short="${encodeURIComponent(r[2])}">${r[2]}</span></td>`
+        : `<td class="note"><span class="note-text">${r[2]}</span></td>`;
+      return `
+      <tr>
+        <td class="handle"><a href="https://x.com/${r[0].replace('@','').replace('@','')}" target="_blank">${r[0]}</a></td>
+        <td class="name">${r[1]}</td>
+        ${noteCell}
+      </tr>`;
+    }).join('');
+    div.innerHTML = `
+      <div class="sub-title">
+        ${group.title}
+        <span class="count">${group.rows.length} accounts</span>
+      </div>
+      <table>
+        <thead><tr><th>Handle</th><th>Name / Org</th><th>Notes / Role</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+    container.appendChild(div);
+  });
+}
+
+renderSubs('country',    DATA.country);
+renderSubs('profession', DATA.profession);
+renderSubs('topical',    DATA.topical);
+
+function showTab(name, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+  filterAll();
+}
+
+function filterAll() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  ['country','profession','topical'].forEach(sec => {
+    const section = document.getElementById('tab-' + sec);
+    if (!section.classList.contains('active')) return;
+    let anyVisible = false;
+    section.querySelectorAll('tbody tr').forEach(row => {
+      const show = !q || row.innerText.toLowerCase().includes(q);
+      row.classList.toggle('hidden', !show);
+      if (show) anyVisible = true;
+    });
+    section.querySelectorAll('.sub').forEach(sub => {
+      const visible = Array.from(sub.querySelectorAll('tbody tr')).some(r => !r.classList.contains('hidden'));
+      sub.style.display = visible ? '' : 'none';
+    });
+    document.getElementById(sec + '-noresults').style.display = (!anyVisible && q) ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>
